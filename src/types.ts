@@ -16,3 +16,10 @@ export interface CountryCard {
   population: number;
   languages: string[];
 }
+
+export type AppState =
+  | { type: 'idle' }
+  | { type: 'loading' }
+  | { type: 'results'; data: CountryCard[] }
+  | { type: 'empty' }
+  | { type: 'error'; message: string; query: string };

@@ -16,8 +16,19 @@ describe('searchCountries', () => {
     vi.mocked(fetch).mockResolvedValue(new Response(JSON.stringify(mockRaw), { status: 200 }));
 
     const result = await searchCountries('spain', new AbortController().signal);
+
     expect(result).toEqual([
-      { name: 'Spain', flag: '🏳️', capital: 'Madrid', region: '—', population: 0, languages: [] },
+      {
+        name: 'Spain',
+        flag: '🏳️',
+        capital: 'Madrid',
+        region: '—',
+        population: 0,
+        area: 0,
+        borders: [],
+        currencies: [],
+        languages: [],
+      },
     ]);
   });
 

@@ -4,6 +4,8 @@ export interface RawCountry {
   capital?: string;
   region?: string;
   population?: number;
+  area?: number;
+  borders?: string[];
   languages?: { name: string }[];
   currencies?: { name: string }[];
 }
@@ -14,7 +16,10 @@ export interface CountryCard {
   capital: string;
   region: string;
   population: number;
+  area: number;
+  borders: string[];
   languages: string[];
+  currencies: string[];
 }
 
 export type AppState =

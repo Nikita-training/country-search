@@ -1,0 +1,40 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+.card, button {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  background: #fff;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.card:hover {
+  background: #f0f0f0;
+}
+.hidden {
+  display: none;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+.loading {
+  color: blue;
+}
+.error {
+  color: red;
+}
+.empty {
+  color: gray;
+  font-style: italic;
+}
